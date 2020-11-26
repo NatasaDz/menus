@@ -1,0 +1,115 @@
+body {
+    font-family: arial;
+    background-color: #FFF;
+}
+
+#wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px 40px;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #00CED1;
+    position: relative;
+    padding: 5px;
+}
+
+ul li a:hover {
+    color: #FF8787;
+}
+
+ul li a span:first-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #FF8787;
+    border-left: 2px solid #FF8787;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+ul li a span:first-child:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #FF8787;
+    border-right: 2px solid #FF8787;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+ul li a span:last-child:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid #FF8787;
+    border-left: 2px solid #FF8787;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+ul li a span:last-child:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid #FF8787;
+    border-right: 2px solid #FF8787;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+ul li a:hover span:first-child:before {
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+ul li a:hover span:first-child:after {
+    top: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+ul li a:hover span:last-child:before {
+    bottom: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+ul li a:hover span:last-child:after {
+    bottom: -10px;
+    right: -10px;
+    opacity: 1;
+}
